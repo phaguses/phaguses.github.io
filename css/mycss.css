@@ -1,0 +1,89 @@
+.bclr{
+ background-color:#ee4532;
+}
+.row-lft{
+	border-left: 1px solid #ee4532;
+}
+.row-rht{
+	border-right: 1px solid #ee4532;
+}
+.brand-logo img {
+   height: 45px;
+    position: relative;
+    top: 2px;
+    left: 25px;
+    }
+.mar-btm{
+	margin-bottom: 25px;
+}
+.film{
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+
+/*heart*/
+
+@keyframes heartbeat {
+  0% {
+    transform: scale( .75);
+  }
+  20% {
+    transform: scale( 1);
+  }
+  40% {
+    transform: scale( .75);
+  }
+  60% {
+    transform: scale( 1);
+  }
+  80% {
+    transform: scale( .75);
+  }
+  100% {
+    transform: scale( .75);
+  }
+}
+
+#heart {
+  position: relative;
+  animation: heartbeat 1s infinite;
+  color:#f44336;
+}
+
+#heart:before,
+#heart:after {
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (min-width: 768px){
+.brand-logo img{
+  height: 45px;
+	position: relative;
+    top: 2px;
+	left: 0px;
+}
+}
